@@ -1,0 +1,11 @@
+{
+  "name": "cheker-resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "author": "Vxdosick",
+  "license": "ISC",
+  "description": "Full stack resume validity checker app."
+}
