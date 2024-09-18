@@ -101,6 +101,18 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 50px;
   }
 }
+.button--disabled {
+  cursor: not-allowed;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(56, 0, 113);
+  background-color: rgb(189, 129, 249);
+  color: white;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
 .button--general {
   font-size: 18px;
   font-weight: 500;
@@ -235,6 +247,27 @@ h1, h2, h3, h4, h5, h6 {
             opacity: 0;
             z-index: 0;
           }
+          .scan__pdfwarning {
+            background-color: #8a8a8a;
+            padding: 4px 10px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 30px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            span {
+              font-weight: 600;
+              background-color: black;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+            }
+          }
         }
         .scan__type {
           align-items: start;
@@ -251,6 +284,12 @@ h1, h2, h3, h4, h5, h6 {
             }
           }
         }
+      }
+      .scan__accept {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
       }
     }
   }

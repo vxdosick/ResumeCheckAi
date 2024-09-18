@@ -45,6 +45,10 @@
                             </div>
                             <input class="scan__fileinput" id="file" type="file"
                              onchange="updateFileName()">
+                             <div class="scan__pdfwarning">
+                                <span>!</span>
+                                <p>Download your resume as a <b>PDF</b></p>
+                             </div>
                         </div>
                         <div class="scan__type display--none">
                             <select name="scan__type" id="type" class="text--normal">
@@ -59,8 +63,11 @@
                             </select>
                         </div>
                         <div class="scan__accept">
-                            <div></div>
-                            <button type="submit" class="button--general">Scan</button>
+                            <button 
+                            type="submit" 
+                            class="button--disabled" 
+                            disabled>Scan</button>
+                            <div class="scan__loading display--none">Loading</div>
                         </div>
                     </form>
                 </div>
