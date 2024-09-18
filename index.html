@@ -3,22 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Cheker Resume</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__container">sdf</div>
+            <div class="header__container">
+                <a href="/" class="header__logo text--logo">ResumeScanAi</a>
+                <nav class="header__menu text--link">
+                    <ul>
+                        <li><a href="/">Scan</a></li>
+                        <li><a href="/">About</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main class="main">
-            <section>
-                <div class="__container">sdf</div>
+            <section class="hero">
+                <div class="hero__container">
+                    <h1 class="hero__title text--h1">Resume validity checker</h1>
+                    <div class="hero__about text--normal">
+                        <div class="hero__items">
+                            <img src="" alt="about us">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="hero__items">
+                            <img src="" alt="about us">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Vitae in cupiditate quod fuga inventore dolorem.</p>
+                        </div>
+                        <div class="hero__items">
+                            <img src="" alt="about us">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                    <div class="hero__scanlink">
+                        <a href="#scan" class="text--link">
+                            <img src="./img/hero/arrow-down.png" alt="Scan"></a>
+                    </div>
+                </div>
+            </section>
+            <section id="scan" class="scan">
+                <div class="scan__container">
+                    <form action="" class="scan__form">
+                        <div class="scan__file">
+                            
+                        </div>
+                        <div class="scan__accept">
+                            <div></div>
+                            <button type="submit">Scan</button>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
         <footer class="footer">
-            <div class="footer__container">sdf</div>
+            <div class="footer__container">
+                <a href="/" class="text--logo footer__logo">ResumeScanAi</a>
+                <a href="#" class="footer__pp">Privacy Policy</a>
+            </div>
         </footer>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>

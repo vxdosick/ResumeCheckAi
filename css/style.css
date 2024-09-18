@@ -31,8 +31,7 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: rgb(25, 25, 25);
-  font-family: monospace;
+  font-family: "Raleway", sans-serif;
 }
 
 input, button, textarea {
@@ -54,7 +53,7 @@ button::-moz-focus-inner {
 
 a, a:visited {
   text-decoration: none;
-  color: rgb(211, 211, 211);
+  color: black;
 }
 
 a:hover {
@@ -83,6 +82,121 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.text--h1 {
+  font-size: 60px;
+  font-family: "Mukta", sans-serif;
+  font-weight: 700;
+}
+
+.text--link {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text--title {
+  font-size: 24px;
+  font-family: "Mukta", sans-serif;
+  font-weight: 700;
+}
+
+.text--normal {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 120%;
+}
+
+.text--logo {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.header {
+  padding: 25px 0px;
+  border-bottom: 1px solid rebeccapurple;
+}
+.header .header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__container .header__menu ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.main .hero {
+  width: 100%;
+  height: calc(100vh - 81px);
+  background-color: palevioletred;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.main .hero .hero__title {
+  margin-bottom: 60px;
+}
+.main .hero .hero__about {
+  display: flex;
+  gap: 30px;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main .hero .hero__about .hero__items {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  max-width: 500px;
+}
+.main .hero .hero__scanlink {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main .hero .hero__scanlink a {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(255, 35, 79);
+  color: white;
+  font-size: 30px;
+  line-height: 0%;
+  position: relative;
+}
+.main .hero .hero__scanlink a img {
+  width: 50%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer {
+  padding: 20px 0px;
+  border-top: 1px solid rebeccapurple;
+}
+.footer .footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.footer .footer__container .footer__logo {
+  font-size: 20px;
+}
+.footer .footer__container .footer__pp:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
