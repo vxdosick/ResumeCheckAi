@@ -16,48 +16,87 @@
                 <a href="/" class="header__logo text--logo">ResumeScanAi</a>
                 <nav class="header__menu text--link">
                     <ul>
-                        <li><a href="/">Scan</a></li>
-                        <li><a href="/">About</a></li>
+                        <li><a href="#scan">Scan</a></li>
+                        <li><a href="#about">About</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main class="main">
-            <section class="hero">
+            <section class="hero margin--section">
                 <div class="hero__container">
                     <h1 class="hero__title text--h1">Resume validity checker</h1>
-                    <div class="hero__about text--normal">
-                        <div class="hero__items">
-                            <img src="" alt="about us">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="hero__items">
-                            <img src="" alt="about us">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Vitae in cupiditate quod fuga inventore dolorem.</p>
-                        </div>
-                        <div class="hero__items">
-                            <img src="" alt="about us">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        </div>
-                    </div>
-                    <div class="hero__scanlink">
-                        <a href="#scan" class="text--link">
-                            <img src="./img/hero/arrow-down.png" alt="Scan"></a>
-                    </div>
+                    <p class="text--normal">AI-enabled resume verification is the future for
+                         employers, hr employees, and all other IT specialties</p>
+                    <a href="#scan" class="text--link hero__scanlink">
+                        <img src="./img/hero/arrow-down.png" alt="Scan">
+                    </a>
                 </div>
             </section>
-            <section id="scan" class="scan">
+            <section id="scan" class="margin--section scan">
                 <div class="scan__container">
+                    <h2 class="text--title margin--title scan__title">Scan resume</h2>
                     <form action="" class="scan__form">
                         <div class="scan__file">
-                            
+                            <div class="scan__info">
+                                <label for="file" 
+                                class="button--general scan__upload">Upload</label>
+                                <span class="scan__filename">No file selected</span>
+                            </div>
+                            <input class="scan__fileinput" id="file" type="file"
+                             onchange="updateFileName()">
+                        </div>
+                        <div class="scan__type display--none">
+                            <select name="scan__type" id="type" class="text--normal">
+                                <option class="" 
+                                value="startup">Startup</option>
+                                <option class="" 
+                                value="small-company">Small Company</option>
+                                <option class="" 
+                                value="enterprise">Enterprise</option>
+                                <option class="" 
+                                value="freelance">Freelance</option>
+                            </select>
                         </div>
                         <div class="scan__accept">
                             <div></div>
                             <button type="submit">Scan</button>
                         </div>
                     </form>
+                </div>
+            </section>
+            <section id="about" class="margin--section about">
+                <div class="text--normal about__container">
+                    <h2 class="text--title margin--title about__title">How it works</h2>
+                    <div class="about__content">
+                        <div class="about__items">
+                            <img src="./img/about/info.svg" alt="about us">
+                            <p>Welcome to <b>ResumeScanAi</b>. 
+                                Here you can check the validity of your resume for different 
+                                types of companies. Get an overall assessment as well as more 
+                                narrow feedback that will help you improve your resume.
+                            </p>
+                        </div>
+                        <div class="about__items">
+                            <img src="./img/about/ai.svg" alt="about us">
+                            <p>
+                                Upload your resume in <b>PDF</b> format and then select the type of 
+                                company you are most focused on, this will help artificial 
+                                intelligence better understand where you aspire to go and give 
+                                a more accurate assessment. 
+                            </p>
+                        </div>
+                        <div class="about__items">
+                            <img src="./img/about/feedback.svg" alt="about us">
+                            <p>
+                                After the review, you will receive an evaluation of your resume,
+                                 items that positively influenced the evaluation, as well as those
+                                  that should be changed. And in this you will be helped by general
+                                   <b>feedback</b> aimed at general statistics and help in
+                                    correcting your resume.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

@@ -112,6 +112,40 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+.margin--title {
+  margin-bottom: 50px;
+}
+
+.margin--section {
+  margin-bottom: 100px;
+}
+
+.button--general {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(56, 0, 113);
+  background-color: rgb(189, 129, 249);
+  color: white;
+  transition: all 0.3s ease;
+}
+.button--general:hover {
+  transform: scale(1.1);
+  background-color: rgb(222, 190, 255);
+  color: black;
+  border: 1px solid white;
+}
+
+.display--none {
+  display: none;
+}
+
+.display--flex {
+  display: flex;
+}
+
+/* --------------------------------------- */
 .header {
   padding: 25px 0px;
   border-bottom: 1px solid rebeccapurple;
@@ -137,49 +171,110 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   position: relative;
 }
+.main .hero .hero__container {
+  text-align: center;
+}
 .main .hero .hero__title {
-  margin-bottom: 60px;
-}
-.main .hero .hero__about {
-  display: flex;
-  gap: 30px;
-  align-items: start;
-  justify-content: space-between;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.main .hero .hero__about .hero__items {
-  display: flex;
-  gap: 20px;
-  align-items: start;
-  max-width: 500px;
+  margin-bottom: 20px;
 }
 .main .hero .hero__scanlink {
+  transition: all 0.3s ease;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(255, 35, 79);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 300px;
   position: absolute;
   bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
 }
-.main .hero .hero__scanlink a {
-  width: 60px;
-  height: 60px;
+.main .hero .hero__scanlink img {
+  width: 26px;
+  margin-top: 8px;
+}
+.main .hero .hero__scanlink:hover {
+  background-color: rgb(223, 223, 223);
+}
+.main .scan .scan__container .scan__form {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  background-color: rgb(255, 35, 79);
-  color: white;
-  font-size: 30px;
-  line-height: 0%;
-  position: relative;
+  flex-direction: column;
+  gap: 30px;
 }
-.main .hero .hero__scanlink a img {
-  width: 50%;
+.main .scan .scan__container .scan__form .scan__file {
+  padding: 40px;
+  width: 600px;
+  height: 400px;
+  border: 2px solid #F5F5DC;
+  border-radius: 20px;
+  background-color: #FFC0CB;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .scan .scan__container .scan__form .scan__file .scan__info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main .scan .scan__container .scan__form .scan__file .scan__info .scan__upload {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.main .scan .scan__container .scan__form .scan__file .scan__info .scan__filename {
+  word-break: break-all;
+}
+.main .scan .scan__container .scan__form .scan__file input {
   position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 0;
+}
+.main .scan .scan__container .scan__form .scan__type {
+  align-items: start;
+  gap: 20px;
+}
+.main .scan .scan__container .scan__form .scan__type label {
+  font-weight: 600;
+}
+.main .scan .scan__container .scan__form .scan__type select {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  width: 200px;
+}
+.main .scan .scan__container .scan__form .scan__type select option {
+  font-size: 16px;
+}
+.main .about .about__container .about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: start;
+}
+.main .about .about__container .about__content .about__items {
+  max-width: 500px;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.main .about .about__container .about__content .about__items img {
+  width: 100px;
 }
 
 .footer {
