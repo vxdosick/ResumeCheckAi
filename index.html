@@ -13,11 +13,12 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <a href="/" class="header__logo text--logo">ResumeScanAi</a>
+                <a href="/" class="header__logo text--logo">ResumeChekAi</a>
                 <nav class="header__menu text--link">
                     <ul>
                         <li><a href="#scan">Scan</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="#review">Review</a></li>
                     </ul>
                 </nav>
             </div>
@@ -28,9 +29,32 @@
                     <h1 class="hero__title text--h1">Resume validity checker</h1>
                     <p class="text--normal">AI-enabled resume verification is the future for
                          employers, hr employees, and all other IT specialties</p>
-                    <a href="#scan" class="text--link hero__scanlink">
-                        <img src="./img/hero/arrow-down.png" alt="Scan">
-                    </a>
+                </div>
+            </section>
+            <section class="wecan margin--section">
+                <div class="wecan__container">
+                    <nav>
+                        <ul class="text--normal">
+                            <li>
+                                <img src="./img/about/info.svg" alt="=>">
+                                <p>Welcome to <b>ResumeScanAi</b>, where you can validate your
+                                     resume for different companies and receive both overall and 
+                                     targeted feedback to improve it.</p>
+                            </li>
+                            <li>
+                                <img src="./img/about/ai.svg" alt="=>">
+                                <p>Upload your resume in <b>PDF</b> format and select the type
+                                     of company you're focused on. This helps AI provide a more
+                                      accurate assessment.</p>
+                            </li>
+                            <li>
+                                <img src="./img/about/feedback.svg" alt="=>">
+                                <p>After the review, you'll get an evaluation with positive
+                                     aspects and suggestions for improvement, supported by
+                                      general <b>feedback</b> to refine your resume.</p>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </section>
             <section id="scan" class="margin--section scan">
@@ -39,40 +63,122 @@
                     <form action="" class="scan__form">
                         <div class="scan__file">
                             <div class="scan__info">
+                                <img src="./img/scan/pdf-icon.svg" alt="PDF">
+                                <span class="scan__filename">No file selected</span>
                                 <label for="file" 
                                 class="button--general scan__upload">Upload</label>
-                                <span class="scan__filename">No file selected</span>
                             </div>
                             <input class="scan__fileinput" id="file" type="file"
                              onchange="updateFileName()">
-                             <div class="scan__pdfwarning">
+                             <!-- <div class="scan__pdfwarning">
                                 <span>!</span>
                                 <p>Download your resume as a <b>PDF</b></p>
-                             </div>
-                        </div>
-                        <div class="scan__type display--none">
-                            <select name="scan__type" id="type" class="text--normal">
-                                <option class="" 
-                                value="startup">Startup</option>
-                                <option class="" 
-                                value="small-company">Small Company</option>
-                                <option class="" 
-                                value="enterprise">Enterprise</option>
-                                <option class="" 
-                                value="freelance">Freelance</option>
-                            </select>
+                             </div> -->
                         </div>
                         <div class="scan__accept">
+                            <div class="scan__questions">
+                                <div>
+                                    <h3 class="text--subtitle">Lorem ipsum</h3>
+                                    <label class="text--normal" for="first">
+                                        <input type="radio" name="first">
+                                        Lorem
+                                    </label>
+                                    <label class="text--normal" for="first">
+                                        <input type="radio" name="first">
+                                        Lorem
+                                    </label>
+                                    <label class="text--normal" for="first">
+                                        <input type="radio" name="first">
+                                        Lorem
+                                    </label>
+                                </div>
+                                <div>
+                                    <h3 class="text--subtitle">Lorem ipsum</h3>
+                                    <label class="text--normal" for="second">
+                                        <input type="radio" name="second">
+                                        Lorem
+                                    </label>
+                                    <label class="text--normal" for="second">
+                                        <input type="radio" name="second">
+                                        Lorem
+                                    </label>
+                                    <label class="text--normal" for="second">
+                                        <input type="radio" name="second">
+                                        Lorem
+                                    </label>
+                                </div>
+                            </div>
                             <button 
                             type="submit" 
                             class="button--disabled" 
                             disabled>Scan</button>
-                            <div class="scan__loading display--none">Loading</div>
                         </div>
+                        <div class="scan__loading display--none">Loading</div>
                     </form>
                 </div>
             </section>
-            <section id="about" class="margin--section about">
+            <section id="about" class="aboutus margin--section">
+                <div class="aboutus__container">
+                    <div class="aboutus__content">
+                        <h2 class="text--title margin--title aboutus__title">About Us</h2>
+                    <p class="text--normal aboutus__content">ResumeScanAi is a cutting-edge platform that leverages AI technology to help individuals validate and enhance their resumes. Our service is designed to offer tailored feedback based on the type of company you're targeting, ensuring your resume meets industry standards. Whether you're an employer, HR specialist, or job seeker in IT or any other sector, our AI-enabled resume verification provides detailed insights to help you stand out. With ResumeScanAi, you can receive both general and specific recommendations that will elevate your resume to the next level.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="review" class="margin--section review">
+                <div class="text--normal review__container">
+                    <h2 class="text--title margin--title review__title">Review</h2>
+                    <div class="review__content">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <div class="review__stars">
+                                        <img src="./img/review/star.svg" alt=".">
+                                        <img src="./img/review/star.svg" alt=".">
+                                        <img src="./img/review/star.svg" alt=".">
+                                        <img src="./img/review/star.svg" alt=".">
+                                        <img src="./img/review/star.svg" alt=".">
+                                    </div>
+                                    <div class="review__person">
+                                        <img src="./img/review/men1.webp" alt="person">
+                                        <h3>Ethan Crosswell</h3>
+                                    </div>
+                                    <p class="text--normal review__feedback">ResumeScanAi helped me improve my resume with precise AI suggestions. I liked how I could choose a specific company type for tailored feedback.</p>
+                                </li>
+                                <li>
+                                    <div class="review__stars">
+                                        <img src="./img/review/star.svg" alt=".">
+                                        <img src="./img/review/star.svg" alt=".">
+                                        <img src="./img/review/star.svg" alt=".">
+                                        <img src="./img/review/star.svg" alt=".">
+                                        <img src="./img/review/star.svg" alt=".">
+                                    </div>
+                                    <div class="review__person">
+                                        <img src="./img/review/men2.webp" alt="person">
+                                        <h3>Landon Mays</h3>
+                                    </div>
+                                    <p class="text--normal review__feedback">This tool is easy to use and provides detailed feedback. The AI focuses on both strengths and areas for improvement, making it ideal for job seekers.</p>
+                                </li>
+                                <li>
+                                    <div class="review__stars">
+                                        <img src="./img/review/star.svg" alt=".">
+                                        <img src="./img/review/star.svg" alt=".">
+                                        <img src="./img/review/star.svg" alt=".">
+                                        <img src="./img/review/star.svg" alt=".">
+                                        <img src="./img/review/star.svg" alt=".">
+                                    </div>
+                                    <div class="review__person">
+                                        <img src="./img/review/girl.webp" alt="person">
+                                        <h3>Ava Winford</h3>
+                                    </div>
+                                    <p class="text--normal review__feedback">ResumeScanAi made resume optimization simple. The targeted feedback for different industries gave me more confidence when applying to companies.</p>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <!-- <section id="about" class="margin--section about">
                 <div class="text--normal about__container">
                     <h2 class="text--title margin--title about__title">How it works</h2>
                     <div class="about__content">
@@ -105,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
         <footer class="footer">
             <div class="footer__container">

@@ -1,12 +1,9 @@
 function updateFileName() {
     const scanFileinput = document.querySelector(".scan__fileinput")
     const scanFilename = document.querySelector(".scan__filename")
-    const scanType = document.querySelector(".scan__type")
     const scanAccept = document.querySelector(".scan__accept button")
     if (scanFileinput.files.length > 0) {
         scanFilename.textContent = scanFileinput.files[0].name
-        scanType.classList.add("display--flex")
-        scanType.classList.remove("display--none")
         scanAccept.classList.add("button--general")
         scanAccept.classList.remove("button--disabled")
     } else if (scanFileinput.files.length < 0) {
@@ -25,10 +22,11 @@ const scanForm = document.querySelector(".scan__form")
 scanForm.addEventListener("submit", (e) => {
     e.preventDefault()
     startLoading()
-
-    setTimeout(() => {
-        scanForm.submit();
-        console.log("okay");
-        
-    }, 5000)
+    requestAnimationFrame(() => {
+        setTimeout(() => {
+            scanForm.submit();
+            console.log("okay");
+            
+        }, 5000)
+    })
 })
