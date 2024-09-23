@@ -446,13 +446,21 @@ h1, h2, h3, h4, h5, h6 {
 .feedback__main {
   min-height: calc(100vh - 165px);
   .feedback {
-    .feedback__container {
       padding-top: 75px;
       .feedback__header {
         display: flex;
         align-items: center;
         gap: 50px;
         justify-content: space-between;
+        background-color: rgb(126, 201, 255);
+        .feedback__rate {
+          padding: 50px 0px;
+          color: white;
+          .feedback__title {
+            font-size: 80px;
+            font-weight: 700;
+          }
+        }
         @media (max-width: 480px) {
           flex-direction: column;
           gap: 30px;
@@ -460,7 +468,7 @@ h1, h2, h3, h4, h5, h6 {
         }
         .feedback__score {
           padding: 10px 20px;
-          background-color: #FFC0CB;
+          background-color: rgb(126, 201, 255);
           border-radius: 8px;
           font-weight: 600;
           border: 1px solid rebeccapurple;
@@ -503,6 +511,16 @@ h1, h2, h3, h4, h5, h6 {
         }
       }
       .feedback__footer {
+        width: 100%;
+        background-color: rgb(126, 201, 255);
+        padding: 50px 0px;
+        h2 {
+          color: white;
+          margin-bottom: 20px;
+        }
+        h3 {
+          color: white;
+        }
         @media (max-width: 480px) {
           text-align: center;
         }
@@ -520,6 +538,5 @@ h1, h2, h3, h4, h5, h6 {
       @media (max-width: 480px) {
         padding-top: 50px;
       }
-    }
   }
 }

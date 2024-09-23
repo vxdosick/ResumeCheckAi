@@ -459,47 +459,56 @@ h1, h2, h3, h4, h5, h6 {
 .feedback__main {
   min-height: calc(100vh - 165px);
 }
-.feedback__main .feedback .feedback__container {
+.feedback__main .feedback {
   padding-top: 75px;
 }
-.feedback__main .feedback .feedback__container .feedback__header {
+.feedback__main .feedback .feedback__header {
   display: flex;
   align-items: center;
   gap: 50px;
   justify-content: space-between;
+  background-color: rgb(126, 201, 255);
+}
+.feedback__main .feedback .feedback__header .feedback__rate {
+  padding: 50px 0px;
+  color: white;
+}
+.feedback__main .feedback .feedback__header .feedback__rate .feedback__title {
+  font-size: 80px;
+  font-weight: 700;
 }
 @media (max-width: 480px) {
-  .feedback__main .feedback .feedback__container .feedback__header {
+  .feedback__main .feedback .feedback__header {
     flex-direction: column;
     gap: 30px;
     text-align: center;
   }
 }
-.feedback__main .feedback .feedback__container .feedback__header .feedback__score {
+.feedback__main .feedback .feedback__header .feedback__score {
   padding: 10px 20px;
-  background-color: #FFC0CB;
+  background-color: rgb(126, 201, 255);
   border-radius: 8px;
   font-weight: 600;
   border: 1px solid rebeccapurple;
 }
-.feedback__main .feedback .feedback__container .feedback__content {
+.feedback__main .feedback .feedback__content {
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-bottom: 50px;
 }
-.feedback__main .feedback .feedback__container .feedback__content > div nav ul {
+.feedback__main .feedback .feedback__content > div nav ul {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.feedback__main .feedback .feedback__container .feedback__content > div nav ul .feedback__step {
+.feedback__main .feedback .feedback__content > div nav ul .feedback__step {
   position: relative;
   display: flex;
   align-items: start;
   gap: 20px;
 }
-.feedback__main .feedback .feedback__container .feedback__content > div nav ul .feedback__step:not(.feedback__step:last-child)::before {
+.feedback__main .feedback .feedback__content > div nav ul .feedback__step:not(.feedback__step:last-child)::before {
   content: "";
   position: absolute;
   top: 40px;
@@ -508,29 +517,41 @@ h1, h2, h3, h4, h5, h6 {
   height: calc(100% - 15px);
   background-color: lightgray;
 }
-.feedback__main .feedback .feedback__container .feedback__content > div nav ul .feedback__step img {
+.feedback__main .feedback .feedback__content > div nav ul .feedback__step img {
   width: 35px;
 }
-.feedback__main .feedback .feedback__container .feedback__content > div nav ul .feedback__step p {
+.feedback__main .feedback .feedback__content > div nav ul .feedback__step p {
   max-width: 700px;
 }
+.feedback__main .feedback .feedback__footer {
+  width: 100%;
+  background-color: rgb(126, 201, 255);
+  padding: 50px 0px;
+}
+.feedback__main .feedback .feedback__footer h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+.feedback__main .feedback .feedback__footer h3 {
+  color: white;
+}
 @media (max-width: 480px) {
-  .feedback__main .feedback .feedback__container .feedback__footer {
+  .feedback__main .feedback .feedback__footer {
     text-align: center;
   }
 }
-.feedback__main .feedback .feedback__container .feedback__back {
+.feedback__main .feedback .feedback__back {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px 0px;
 }
-.feedback__main .feedback .feedback__container .feedback__back a {
+.feedback__main .feedback .feedback__back a {
   display: inline-block;
 }
 @media (max-width: 480px) {
-  .feedback__main .feedback .feedback__container {
+  .feedback__main .feedback {
     padding-top: 50px;
   }
 }
