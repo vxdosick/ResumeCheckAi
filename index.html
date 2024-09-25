@@ -61,63 +61,57 @@
                 <div class="scan__container">
                     <h2 class="text--title margin--title scan__title">Scan resume</h2>
                     <form action="" class="scan__form">
-                        <div class="scan__file">
-                            <div class="scan__info">
-                                <img src="./img/scan/pdf-icon.svg" alt="PDF">
-                                <span class="scan__filename">No file selected</span>
-                                <label for="file" 
-                                class="button--general scan__upload">Upload</label>
-                            </div>
-                            <input class="scan__fileinput" id="file" type="file"
-                             onchange="updateFileName()">
-                             <!-- <div class="scan__pdfwarning">
-                                <span>!</span>
-                                <p>Download your resume as a <b>PDF</b></p>
-                             </div> -->
-                        </div>
-                        <div class="scan__accept">
-                            <div class="scan__questions">
-                                <div>
-                                    <h3 class="text--subtitle">Company type</h3>
-                                    <label class="text--normal" for="first">
-                                        <input type="radio" name="first">
-                                        Startup
-                                    </label>
-                                    <label class="text--normal" for="first">
-                                        <input type="radio" name="first">
-                                        Small company
-                                    </label>
-                                    <label class="text--normal" for="first">
-                                        <input type="radio" name="first">
-                                        Big Tech
-                                    </label>
-                                    <label class="text--normal" for="first">
-                                        <input type="radio" name="first">
-                                        Freelance
-                                    </label>
+                        <div class="scan__wrapper">
+                            <div class="scan__file">
+                                <div class="scan__info">
+                                    <img src="./img/scan/pdf-icon.svg" alt="PDF">
+                                    <span class="scan__filename">No file selected</span>
+                                    <label for="file" 
+                                    class="button--general scan__upload">Upload</label>
                                 </div>
-                                <!-- <div>
-                                    <h3 class="text--subtitle">Lorem ipsum</h3>
-                                    <label class="text--normal" for="second">
-                                        <input type="radio" name="second">
-                                        Lorem
-                                    </label>
-                                    <label class="text--normal" for="second">
-                                        <input type="radio" name="second">
-                                        Lorem
-                                    </label>
-                                    <label class="text--normal" for="second">
-                                        <input type="radio" name="second">
-                                        Lorem
-                                    </label>
-                                </div> -->
+                                <input class="scan__fileinput" id="file" type="file"
+                                 accept=".pdf" onchange="updateFileName()">
+                                 <!-- <div class="scan__pdfwarning">
+                                    <span>!</span>
+                                    <p>Download your resume as a <b>PDF</b></p>
+                                 </div> -->
                             </div>
-                            <button 
-                            type="submit" 
-                            class="button--disabled" 
-                            disabled>Scan</button>
+                            <div class="scan__accept">
+                                <div class="scan__questions">
+                                    <div>
+                                        <h3 class="text--subtitle">Company type</h3>
+                                        <label class="text--normal" for="first">
+                                            <input type="radio" name="company_type"
+                                             value="startup"
+                                             required>
+                                            Startup
+                                        </label>
+                                        <label class="text--normal" for="first">
+                                            <input type="radio" name="company_type"
+                                             value="smallcompany"
+                                             required>
+                                            Small company
+                                        </label>
+                                        <label class="text--normal" for="first">
+                                            <input type="radio" name="company_type"
+                                             value="bigtech"
+                                             required>
+                                            Big Tech
+                                        </label>
+                                        <label class="text--normal" for="first">
+                                            <input type="radio" name="company_type"
+                                             value="freelance"
+                                             required>
+                                            Freelance
+                                        </label>
+                                    </div>
+                                </div>
+                                <button
+                                class="button--disabled scan__submit" 
+                                disabled>Scan</button>
+                            </div>
                         </div>
-                        <div class="scan__loading display--none">Loading</div>
+                        <div class="scan__loading display--none"></div>
                     </form>
                 </div>
             </section>

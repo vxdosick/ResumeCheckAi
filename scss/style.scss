@@ -220,15 +220,33 @@ h1, h2, h3, h4, h5, h6 {
   .scan {
     .scan__container {
       .scan__form {
-        width: 100%;
         display: flex;
-        justify-content: start;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
         gap: 30px;
-        @media (max-width:980px) {
-          flex-direction: column;
-          gap: 50px;
+        .scan__wrapper {
+          width: 100%;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          justify-content: space-between;
+          gap: 30px;
+          @media (max-width:980px) {
+            flex-direction: column;
+            gap: 50px;
+          }
+        }
+        .scan__loading {
+          border: 5px solid #f3f3f3;
+          border-top: 5px solid #3498db;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          animation: spin 2s linear infinite;
+          margin: 0 auto;
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
         }
         .scan__file {
           padding: 40px;

@@ -7,7 +7,6 @@ const multer = require('multer');
 const dotenv = require('dotenv');
 dotenv.config();
 
-
 const app = express();
 const PORT = process.env.PORT || 3001;
 const apiKey = process.env.API_KEY;
@@ -19,10 +18,6 @@ const upload = multer({ dest: 'uploads/' });
 app.get('/api/', (req, res) => {
     res.send('Heil!');
 });
-
-
-
-
 app.post('/analyze-resume', upload.single('file'), async (req, res) => {
     try {
         const resumeFile = req.file;
