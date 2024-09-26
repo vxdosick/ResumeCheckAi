@@ -30,6 +30,7 @@ const analyzeResume = async (file, companyType) => {
             body: formData
         })
         if(!response.ok) {
+            window.location.href = "/error.html";
             throw new Error("Error analyzing resume")
         } else if (response.ok) {
             const result = await response.json();
